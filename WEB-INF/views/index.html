@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" layout:decorate="~{template-page}">
+
+<th:block layout:fragment="page-title">Título da Página</th:block>
+
+<th:block layout:fragment="breadcrumb">
+	<li>Caminho 1</li>
+	<li>Caminho 2</li>
+</th:block>
+
+<div layout:fragment="content" appContainer="IndexViewModel">
+	<div>Conteúdo</div>
+</div>
+
+<script type="text/javascript" layout:fragment="scripts">
+function IndexViewModel($scope, $nav) {
+
+}
+</script>
+</html>

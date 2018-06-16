@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org"
+	layout:decorate="~{template-left-navigation}">
+
+<head>
+<title>Título do Sistema</title>
+</head>
+
+<th:block layout:fragment="project-title">Título do Sistema</th:block>
+<th:block layout:fragment="project-description">Breve Descrição</th:block>
+
+<th:block layout:fragment="top-navigation-menu">
+	<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
+		<ul role="menu" class="dropdown-menu">
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+		</ul></li>
+	<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
+		<ul role="menu" class="dropdown-menu">
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+		</ul></li>
+	<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
+		<ul role="menu" class="dropdown-menu">
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+		</ul></li>
+	<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
+		<ul role="menu" class="dropdown-menu">
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+			<li><a href="">Menu item</a></li>
+		</ul></li>
+</th:block>
+
+<th:block layout:fragment="left-navigation-menu">
+	<li><a href="#"><i class="fa fa-file-text-o"></i><span class="nav-label">Configurar Templates</span></a></li>
+	<li><a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Monitoramento </span><span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level collapse">
+			<li><a th:href="@{/internalsystem/auditlog}">Logs de auditoria</a></li>
+			<li><a th:href="@{/internalsystem/errorlog}">Logs de erro</a></li>
+		</ul></li>
+	<li><a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level collapse" style="">
+			<li><a href="#">Third Level <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul></li>
+			<li><a href="#">Second Level Item</a></li>
+			<li><a href="#">Second Level Item</a></li>
+			<li><a href="#">Second Level Item</a></li>
+		</ul></li>
+</th:block>
+
+<th:block layout:fragment="footer-text">
+	<strong>Copyright</strong> Todos os diretos reservados ao Banco da Amazônia S/A.</th:block>
+</html>
