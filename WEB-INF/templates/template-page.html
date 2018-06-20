@@ -3,65 +3,130 @@
 	layout:decorate="~{template-left-navigation}">
 
 <head>
-<title>Título do Sistema</title>
+<title>SISSEG - Gestão de ocorrências</title>
 </head>
 
-<th:block layout:fragment="project-title">Título do Sistema</th:block>
-<th:block layout:fragment="project-description">Breve Descrição</th:block>
+<th:block layout:fragment="project-title">Sisseg</th:block>
+<th:block layout:fragment="project-description">Sistema de gestão de ocorrências</th:block>
 
-<th:block layout:fragment="top-navigation-menu">
-	<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
-		<ul role="menu" class="dropdown-menu">
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-		</ul></li>
-	<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
-		<ul role="menu" class="dropdown-menu">
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-		</ul></li>
-	<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
-		<ul role="menu" class="dropdown-menu">
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-		</ul></li>
-	<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu item <span class="caret"></span></a>
-		<ul role="menu" class="dropdown-menu">
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-			<li><a href="">Menu item</a></li>
-		</ul></li>
-</th:block>
+	<!-- Menu suspenso em guias - desativado
+		<th:block layout:fragment="top-navigation-menu">
+			<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Ocorrências <span class="caret"></span></a>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="">Cadastro</a></li>
+					<li><a href="">Consulta</a></li>
+					<li><a href="">Edição</a></li>
+					<li><a href="">Menu item</a></li>
+				</ul></li>
+			<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Criminosos <span class="caret"></span></a>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="">Cadastro</a></li>
+					<li><a href="">Consulta</a></li>
+					<li><a href="">Edição</a></li>
+					<li><a href="">Menu item</a></li>
+				</ul></li>
+			<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Ususários <span class="caret"></span></a>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="">Cadastro</a></li>
+					<li><a href="">Consulta</a></li>
+					<li><a href="">Edição</a></li>
+					<li><a href="">Menu item</a></li>
+				</ul></li>
+			<li class="dropdown"><a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Configurações <span class="caret"></span></a>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="">Menu item</a></li>
+					<li><a href="">Menu item</a></li>
+					<li><a href="">Menu item</a></li>
+					<li><a href="">Menu item</a></li>
+				</ul></li>
+		</th:block> 
+	-->
 
 <th:block layout:fragment="left-navigation-menu">
+	<li><a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Cadastro </span><span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level collapse" style="">
+			
+			<li><a href="#">Criminosos <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Crimes <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Quadrilhas <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Instituição financeira <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Modalidade de crime <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Cidade/Região <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+		</ul>
+	</li>
+	
 	<li><a href="#"><i class="fa fa-file-text-o"></i><span class="nav-label">Configurar Templates</span></a></li>
+	
 	<li><a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Monitoramento </span><span class="fa arrow"></span></a>
+		
 		<ul class="nav nav-second-level collapse">
 			<li><a th:href="@{/internalsystem/auditlog}">Logs de auditoria</a></li>
 			<li><a th:href="@{/internalsystem/errorlog}">Logs de erro</a></li>
 		</ul></li>
+	
 	<li><a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
 		<ul class="nav nav-second-level collapse" style="">
+			
 			<li><a href="#">Third Level <span class="fa arrow"></span></a>
 				<ul class="nav nav-third-level collapse" style="">
 					<li><a href="#">Third Level Item</a></li>
 					<li><a href="#">Third Level Item</a></li>
 					<li><a href="#">Third Level Item</a></li>
 
-				</ul></li>
+				</ul>
+			</li>
+				
 			<li><a href="#">Second Level Item</a></li>
 			<li><a href="#">Second Level Item</a></li>
 			<li><a href="#">Second Level Item</a></li>
-		</ul></li>
+			
+		</ul>
+	</li>
 </th:block>
 
 <th:block layout:fragment="footer-text">
-	<strong>Copyright</strong> Todos os diretos reservados ao Banco da Amazônia S/A.</th:block>
+		<strong>Copyright</strong> Todos os diretos reservados ao Banco da Amazônia S/A.
+	</th:block>
 </html>
