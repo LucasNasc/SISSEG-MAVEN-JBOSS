@@ -43,9 +43,9 @@
 	-->
 
 <th:block layout:fragment="left-navigation-menu">
+	
 	<li><a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Cadastro </span><span class="fa arrow"></span></a>
 		<ul class="nav nav-second-level collapse" style="">
-			
 			<li><a href="#">Criminosos <span class="fa arrow"></span></a>
 				<ul class="nav nav-third-level collapse" style="">
 					<li><a href="#">Third Level Item</a></li>
@@ -54,7 +54,7 @@
 
 				</ul>
 			</li>
-			<li><a href="#">Crimes <span class="fa arrow"></span></a>
+			<li><a href="#">Crime <span class="fa arrow"></span></a>
 				<ul class="nav nav-third-level collapse" style="">
 					<li><a href="#">Third Level Item</a></li>
 					<li><a href="#">Third Level Item</a></li>
@@ -62,7 +62,60 @@
 
 				</ul>
 			</li>
-			<li><a href="#">Quadrilhas <span class="fa arrow"></span></a>
+			<li><a href="#">Quadrilha <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Instituição financeira <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Modalidade de crime <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Cidade/Região <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+		</ul>
+	</li>
+
+	<li><a href="#"><i class="fa fa-search"></i> <span class="nav-label">Consulta </span><span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level collapse" style="">
+			<li><a href="#">Criminosos <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Crime <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Quadrilha <span class="fa arrow"></span></a>
 				<ul class="nav nav-third-level collapse" style="">
 					<li><a href="#">Third Level Item</a></li>
 					<li><a href="#">Third Level Item</a></li>
@@ -97,19 +150,9 @@
 		</ul>
 	</li>
 	
-	<li><a href="#"><i class="fa fa-file-text-o"></i><span class="nav-label">Configurar Templates</span></a></li>
-	
-	<li><a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Monitoramento </span><span class="fa arrow"></span></a>
-		
-		<ul class="nav nav-second-level collapse">
-			<li><a th:href="@{/internalsystem/auditlog}">Logs de auditoria</a></li>
-			<li><a th:href="@{/internalsystem/errorlog}">Logs de erro</a></li>
-		</ul></li>
-	
-	<li><a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+	<li><a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Relatório </span><span class="fa arrow"></span></a>
 		<ul class="nav nav-second-level collapse" style="">
-			
-			<li><a href="#">Third Level <span class="fa arrow"></span></a>
+			<li><a href="#">Criminosos <span class="fa arrow"></span></a>
 				<ul class="nav nav-third-level collapse" style="">
 					<li><a href="#">Third Level Item</a></li>
 					<li><a href="#">Third Level Item</a></li>
@@ -117,13 +160,63 @@
 
 				</ul>
 			</li>
-				
-			<li><a href="#">Second Level Item</a></li>
-			<li><a href="#">Second Level Item</a></li>
-			<li><a href="#">Second Level Item</a></li>
-			
+			<li><a href="#">Crime <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Quadrilha <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Instituição financeira <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Modalidade de crime <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Cidade/Região <span class="fa arrow"></span></a>
+				<ul class="nav nav-third-level collapse" style="">
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+					<li><a href="#">Third Level Item</a></li>
+
+				</ul>
+			</li>
 		</ul>
 	</li>
+	
+	<li><a href="#"><i class="fa fa-user-o"></i> <span class="nav-label">Usário </span><span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level collapse">
+			<li><a th:href="@{/internalsystem/auditlog}">Cadastrar novo usuário</a></li>
+			<li><a th:href="@{/internalsystem/errorlog}">Remover usuário</a></li>
+		</ul>
+	</li>
+	
+	<li><a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Monitoramento </span><span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level collapse">
+			<li><a th:href="@{/internalsystem/auditlog}">Logs de auditoria</a></li>
+			<li><a th:href="@{/internalsystem/errorlog}">Logs de erro</a></li>
+		</ul>
+	</li>
+	
 </th:block>
 
 <th:block layout:fragment="footer-text">
