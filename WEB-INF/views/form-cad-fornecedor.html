@@ -1,158 +1,149 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org"
-	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" layout:decorate="~{template-page}">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+	layout:decorate="~{template-page}">
 
 <th:block layout:fragment="page-title">Cadastro de criminoso</th:block>
 
 <th:block layout:fragment="breadcrumb">
-	<li>Identificação</li>
-	<li>Caracteristicas fisicas</li>
-	<li>Caracteristicas criminais</li>
+	<li><a href="cadastro-de-criminoso">Identificação</a></li>
+	<li></li>
 </th:block>
 
-<div layout:fragment="content" appContainer="IndexViewModel">
+<div layout:fragment="content" appContainer="CriminosoAddViewModel">
 	<div>
-		<div class="col-md-6 col-lg-6 col-xl-6">
-            <h3>Inscrição</h3>
-            <hr>
-            <form>    
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputNome">Nome do suspeito</label>
-                        <input type="text" class="form-control" id="nomesuspeito" placeholder="Nome do suspeito">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputApelido">Apelido</label>
-                        <input type="text" class="form-control" id="apelido" placeholder="Apelido">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputConjulgue">Nome do(a) cônjulge</label>
-                        <input type="text" class="form-control" id="apelido" placeholder="Esposa ou marido">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputDtNascimento">Data de Nascimento</label>
-                        <input type="datetime-local" class="form-control" id="dtnascimento">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputSexo">Sexo</label>
-                        <select id="sexo" class="form-control">
-                                <option selected>Escolha</option>
-                                <option>Masculino</option>
-                                <option>Feminino</option>
-                                <option>Outros</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="inputEndereco">Endereço</label>
-                    <input type="text" class="form-control" id="endereco" placeholder="Av. Primeiro de Maio, 720">
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEndereco2">Complemento</label>
-                        <input type="text" class="form-control" id="endereco2" placeholder="Casa, apartamento etc">
-                    </div>
-                    <div class="form-group col-md-6">
-                            <label for="inputBairro">Bairro</label>
-                            <input type="text" class="form-control" id="bairro" placeholder="Jaguaribe">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCidade">Cidade</label>
-                        <input type="text" class="form-control" id="cidade">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="inputEstado">UF</label>
-                        <select id="inputEstado" class="form-control">
-                            <option selected>Escolha...</option>
-                            <option>PA</option>
-                            <option>PB</option>
-                            <option>PE</option>
-							<option>PI</option>
-							<option>TO</option>
-							<option>RO</option>
-							<option>MA</option>
-							<option>SP</option>
-							<option>RJ</option>
-							<option>MS</option>
-							<option>MG</option>
-							<option>CE</option>
-							<option>BA</option>
-							<option>AM</option>
-							<option>CB</option>
-							<option>SC</option>
-							<option>AC</option>
-							<option>DF</option>
-							<option>AP</option>
-							<option>AL</option>
-							<option>PR</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="inputCep">CEP</label>
-                        <input type="text" class="form-control" id="cep">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="inputNaturalidade">Naturalidade</label>
-                        <select id="naturalidade" class="form-control">
-                                <option selected>Escolha...</option>
-                                <div class="form-group col-md-3">
-									<label for="inputEstado">UF</label>
-									
-										<option selected>Escolha...</option>
-										<option>PA</option>
-										<option>PB</option>
-										<option>PE</option>
-										<option>PI</option>
-										<option>TO</option>
-										<option>RO</option>
-										<option>MA</option>
-										<option>SP</option>
-										<option>RJ</option>
-										<option>MS</option>
-										<option>MG</option>
-										<option>CE</option>
-										<option>BA</option>
-										<option>AM</option>
-										<option>CB</option>
-										<option>SC</option>
-										<option>AC</option>
-										<option>DF</option>
-										<option>AP</option>
-										<option>AL</option>
-										<option>PR</option>
-									
-								</div>
-                        </select>
-                    </div>
-                </div>
-                
-                <hr>
-                <div class="form-group">
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> Já entreguei o atestado de apitidão física no início do ano letivo.
-                    </label>
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> Me inscrever na lista de e-mail da Semana de Esporte e Cultura.
-                    </label>
-                </div>
-                
-                <button type="submit" class="btn btn-xl btn-outline">Confirmar inscrição</button>
-            </form>
-        </div>
+		<form>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputNome">Nome do suspeito</label> <input type="text"
+						class="form-control" id="nomesuspeito"
+						placeholder="Nome do suspeito">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputApelido">Apelido</label> <input type="text"
+						class="form-control" id="apelido" placeholder="Apelido">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputConjulgue">Nome do(a) cônjulge</label> <input
+						type="text" class="form-control" id="apelido"
+						placeholder="Esposa ou marido">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputDtNascimento">Data de Nascimento</label> <input
+						type="date" class="form-control" id="dtnascimento">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputSexo">Sexo</label> <select id="sexo"
+						class="form-control">
+						<option selected>Escolha</option>
+						<option>Masculino</option>
+						<option>Feminino</option>
+						<option>Outros</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="inputNaturalidade">Naturalidade</label> 
+					<select id="naturalidade" class="form-control">
+						<option selected>Escolha...</option>
+						<option>PA</option>
+						<option>PB</option>
+						<option>PE</option>
+						<option>PI</option>
+						<option>TO</option>
+						<option>RO</option>
+						<option>MA</option>
+						<option>SP</option>
+						<option>RJ</option>
+						<option>MS</option>
+						<option>MG</option>
+						<option>CE</option>
+						<option>BA</option>
+						<option>AM</option>
+						<option>CB</option>
+						<option>SC</option>
+						<option>AC</option>
+						<option>DF</option>
+						<option>AP</option>
+						<option>AL</option>
+						<option>PR</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="inputEndereco">Endereço</label> <input type="text"
+					class="form-control" id="endereco"
+					placeholder="Av. Primeiro de Maio, 720">
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputEndereco2">Complemento</label> <input type="text"
+						class="form-control" id="endereco2"
+						placeholder="Casa, apartamento etc">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputBairro">Bairro</label> <input type="text"
+						class="form-control" id="bairro" placeholder="Jaguaribe">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputCidade">Cidade</label> <input type="text"
+						class="form-control" id="cidade">
+				</div>
+				<div class="form-group col-md-3">
+					<label for="inputEstado">UF</label> <select id="inputEstado"
+						class="form-control">
+						<option selected>Escolha...</option>
+						<option>PA</option>
+						<option>PB</option>
+						<option>PE</option>
+						<option>PI</option>
+						<option>TO</option>
+						<option>RO</option>
+						<option>MA</option>
+						<option>SP</option>
+						<option>RJ</option>
+						<option>MS</option>
+						<option>MG</option>
+						<option>CE</option>
+						<option>BA</option>
+						<option>AM</option>
+						<option>CB</option>
+						<option>SC</option>
+						<option>AC</option>
+						<option>DF</option>
+						<option>AP</option>
+						<option>AL</option>
+						<option>PR</option>
+					</select>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="inputCep">CEP</label> <input type="text"
+						class="form-control" id="cep">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check col-md-8">
+					<label class="form-check-label"> <input
+						class="form-check-input" type="checkbox"> Possui passagem na polícia
+					</label> 
+				</div>
+			</div>
+			<div class="form-group col-md-8">
+				<button type="submit" class="btn">Confirmar cadastro</button>
+			</div>
+		</form>
 	</div>
 </div>
 
 <script type="text/javascript" layout:fragment="scripts">
-function IndexViewModel($scope, $nav) {
+function CriminosoAddViewModel($scope, $nav) {
 
 }
 </script>
