@@ -21,7 +21,7 @@ public class InitController {
 	}
 	@GetMapping("cadastro-de-criminoso")
 	public ActionResponse cadastroDeCriminoso() {
-		return response.view("cadastro-de-criminoso");
+		return response.view("cadastro-de-criminoso-form");
 	}
 	
 }
